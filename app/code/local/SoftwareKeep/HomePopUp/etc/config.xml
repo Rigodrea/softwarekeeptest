@@ -22,6 +22,17 @@
             </sk_homepopup>
         </helpers>
     </global>
+    <frontend>
+         <routers>
+            <sk_homepopup>
+                <use>standard</use>
+                <args>
+                    <module>SoftwareKeep_HomePopUp</module>
+                    <frontName>homepopup</frontName>
+                </args>
+            </sk_homepopup>
+        </routers>
+    </frontend>
     <default>
         <homepopup_tab>
             <general>

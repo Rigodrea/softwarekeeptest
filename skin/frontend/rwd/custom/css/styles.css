@@ -3809,7 +3809,6 @@ position: absolute; }
 
 .popup_msg {
     margin-top: 10px;
-    height: 300px;
 }
 
 .popup_msg span {
@@ -3821,6 +3820,21 @@ position: absolute; }
 
 .popup_msg span::before {
     content: '\00a0\00a0\00a0\00a0';
+}
+
+.dont_show_again {
+    position: relative;
+    bottom: 5px;
+    left: 5px;
+    float: right;
+}
+
+.dont_show_again span {
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+    font-size: 11px;
+    font-style: italic;
 }
 
 .sk_popup_close {

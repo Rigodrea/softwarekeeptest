@@ -28,6 +28,10 @@ class SoftwareKeep_HomePopUp_Block_Popup extends Mage_Core_Block_Template
 
     public function canShowPopUp() 
     {
+        if (Mage::getSingleton('core/cookie')->get('disable_popup')) {
+            return false;
+        }
+
         if (!$this->storeId)  {
             return false;
         }

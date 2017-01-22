@@ -3,7 +3,8 @@
     <div id="skpopup" class="sk_popup" style="display: block;">
         <div class="sk_popup_close">+</div>
         <p class="popup_title"><?php echo $this->getTitle(); ?></p>
-        <p class="popup_msg"><span><?php echo $this->getMessage(); ?></span></p>        
+        <p class="popup_msg"><span><?php echo $this->getMessage(); ?></span></p>
+        <p class="dont_show_again"><input type="checkbox" id="dont_show_popup" name="dont_show_again" /><span>Não mostrar novamente</span></p>        
     </div>
     <script type="text/javascript">
         /* Retira de dentro do Main-Container para sobrepor o layout responsivo */
@@ -22,8 +23,16 @@
         });
 
         function closePopUp() {
+            var url = "<?php echo Mage::getBaseUrl(); ?>/homepopup/disablepopup/";
+
             jQuery('#skpopupmask').hide();
             jQuery('#skpopup').hide();
+
+            if (jQuery('#dont_show_popup').prop("checked")) {
+                jQuery.post(url, { disable_popup : true }, function() {
+                    console.log('did');
+                });  
+            }
         }
     </script>
 <?php endif; ?>
