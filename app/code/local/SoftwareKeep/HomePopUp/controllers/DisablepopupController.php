@@ -1,6 +1,6 @@
 <?php 
 
-class SoftwareKeep_HomePopUp_DisablePopUpController extends Mage_Core_Controller_Front_Action 
+class SoftwareKeep_HomePopUp_DisablepopupController extends Mage_Core_Controller_Front_Action 
 {
     public function indexAction() 
     {
