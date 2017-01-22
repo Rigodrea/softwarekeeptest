@@ -32,6 +32,15 @@
                 </args>
             </sk_homepopup>
         </routers>
+        <translate>
+            <modules>
+                <translations>
+                    <files>
+                        <default>SoftwareKeep_HomePopUp.csv</default>
+                    </files>
+                </translations>
+            </modules>
+        </translate>
     </frontend>
     <default>
         <homepopup_tab>
