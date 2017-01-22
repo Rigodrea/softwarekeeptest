@@ -1,0 +1,10 @@
+<?php if ($this->canShowPopUp()): ?>
+<div class="softwarekeep_popup" style="background-image: url('<?php echo $this->getBackgroundImage()); ?>');">
+    <div class="sk_popup_title">
+        <p><span><?php echo $this->getTitle(); ?></span></p>
+    </div>
+    <div class="sk_popup_msg">
+        <p><span><?php echo $this->getMessage(); ?></span></p>
+    </div>
+</div>
+<?php endif; ?>

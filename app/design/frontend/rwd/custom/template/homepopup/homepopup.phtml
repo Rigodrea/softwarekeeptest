@@ -1,0 +1,29 @@
+<?php if ($this->canShowPopUp()): ?>
+    <div id="skpopupmask" class="sk_popup_mask"></div>
+    <div id="skpopup" class="sk_popup" style="display: block;">
+        <div class="sk_popup_close">+</div>
+        <p class="popup_title"><?php echo $this->getTitle(); ?></p>
+        <p class="popup_msg"><span><?php echo $this->getMessage(); ?></span></p>        
+    </div>
+    <script type="text/javascript">
+        /* Retira de dentro do Main-Container para sobrepor o layout responsivo */
+        jQuery('document').ready(function() {
+
+            var popupObject = jQuery('#skpopup');
+            popupObject.appendTo('body');
+
+            var maskObject = jQuery('#skpopupmask');
+            maskObject.appendTo('body'); 
+
+            var closeButton = jQuery('.sk_popup_close');
+
+            maskObject.on('click', function() { closePopUp(); });
+            closeButton.on('click', function() { closePopUp(); });
+        });
+
+        function closePopUp() {
+            jQuery('#skpopupmask').hide();
+            jQuery('#skpopup').hide();
+        }
+    </script>
+<?php endif; ?>

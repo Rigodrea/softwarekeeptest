@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <SoftwareKeep_HomePopUp>
+            <version>0.0.1</version>            
+        </SoftwareKeep_HomePopUp>
+    </modules>
+    <global>
+        <models>
+            <sk_homepopup>
+                <class>SoftwareKeep_HomePopUp_Model</class>
+            </sk_homepopup>
+        </models>
+        <blocks>
+            <sk_homepopup>
+                <class>SoftwareKeep_HomePopUp_Block</class>
+            </sk_homepopup>
+        </blocks>
+        <helpers>
+            <sk_homepopup>
+                <class>SoftwareKeep_HomePopUp_Helper</class>
+            </sk_homepopup>
+        </helpers>
+    </global>
+    <default>
+        <homepopup_tab>
+            <general>
+                <popup_enabled>1</popup_enabled>
+                <popup_title>Bem vindo</popup_title>
+                <popup_msg></popup_msg>
+                <popup_background></popup_background>
+            </general>
+        </homepopup_tab>
+    </default>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <SoftwareKeep_HomePopUp>
+            <active>true</active>
+            <codePool>local</codePool>
+        </SoftwareKeep_HomePopUp>
+    </modules>
+</config>
