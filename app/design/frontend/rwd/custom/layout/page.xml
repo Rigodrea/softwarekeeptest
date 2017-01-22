@@ -55,7 +55,10 @@ Default layout, loads most of the pages
                 <action method="addJs"><script>varien/js.js</script></action>
                 <action method="addJs"><script>varien/form.js</script></action>
                 <action method="addJs"><script>mage/translate.js</script></action>
-                <action method="addJs"><script>mage/cookies.js</script></action>		
+                <action method="addJs"><script>mage/cookies.js</script></action>
+                <action method="addItem"><type>skin_js</type><name>js/app.js</name></action>		
+                <action method="addItem"><type>skin_js</type><name>js/lib/modernizr.custom.min.js</name></action>
+                <action method="addItem"><type>skin_js</type><name>js/lib/enquire.js</name></action>
                 
                 <action method="addItem"><type>skin_js</type><name>js/jquery.easing.1.3.js</name><params/></action>
                 <action method="addItem"><type>skin_js</type><name>js/jquery.mobile.customized.min.js</name><params/></action>

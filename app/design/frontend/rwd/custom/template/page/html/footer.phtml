@@ -54,13 +54,7 @@
 					  </div>
 					<div class="footer-shadow">
 						<address><?php echo $this->getCopyright() ?></address>
-						<div class="clear"></div>
-						<?php echo $this->getChildHtml('store_switcher') ?>
-							<?php $current_page = Mage::app()->getFrontController()->getRequest()->getRouteName(); 
-								if ($current_page == 'cms'):
-									echo 'More <a rel="nofollow" href="http://www.templatemonster.com/category/apparel-magento-themes/" target="_blank">Apparel Magento Themes at TemplateMonster.com</a>';
-								endif;
-							?>
+						<div class="clear"></div>						
 					</div>
 				</div>
 			</div>

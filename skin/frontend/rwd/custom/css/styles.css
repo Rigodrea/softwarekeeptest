@@ -3764,6 +3764,7 @@ position: absolute; }
 .header .form-search .search-autocomplete li {padding: 5px;}
 .header .form-search .search-autocomplete li img {margin-right: 10px;}
 .ps-phone .header .form-search .search-autocomplete {display: none !important;} 
+.footer-col-content .links .block-title { margin-bottom: 10px; }
 
 .store_location {
     float: left;
